@@ -1,0 +1,22 @@
+{
+  "name": "repolens",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "22"
+  },
+  "workspaces": ["shared", "server", "web"],
+  "scripts": {
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:server": "npm -w server run dev",
+    "dev:web": "npm -w web run dev",
+    "worker": "npm -w server run worker",
+    "build": "npm -w shared run build && npm -w web run build && npm -w server run build",
+    "start": "node server/dist/index.js",
+    "postinstall": "node -e \"try{require('fs').accessSync('shared/dist/types.js')}catch(e){process.exit(1)}\" || npm -w shared run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.9.3"
+  }
+}

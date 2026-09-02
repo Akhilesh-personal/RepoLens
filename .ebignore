@@ -1,0 +1,12 @@
+.git
+.gitignore
+.cursor
+.env
+.env.*
+*.md
+web
+node_modules
+server/src
+shared/src
+**/*.tsbuildinfo
+agent-transcripts
