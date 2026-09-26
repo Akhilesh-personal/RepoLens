@@ -1,8 +1,8 @@
 # Repo Lens
 
-KVS Technologies · Internal use only
+RepoLens — a tool that indexes a GitHub repository and explains what every file in it does, so you can get oriented in an unfamiliar codebase without reading it line by line.
 
-Repo Lens is an internal GitHub explanation tool. Each person signs in with GitHub. Repo Lens then indexes the repositories that user can access, writes a short AI summary of each file, and presents the project as an interactive 3D constellation. Users never see source code — only structure, summaries, and relationships.
+Each person signs in with GitHub. Repo Lens then indexes the repositories that user can access, writes a short AI summary of each file, and presents the project as an interactive 3D constellation. Users never see source code — only structure, summaries, and relationships.
 
 ## Setup
 

@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useState, type React
 import type { AuthMe } from "shared";
 import { api } from "../lib/api";
 import { RepoIndexProvider, useRepoIndex } from "./RepoIndexProvider";
-import { InternalSubheader, Wordmark } from "./Wordmark";
+import { Tagline, Wordmark } from "./Wordmark";
 
 type AuthState =
   | { status: "loading" }
@@ -113,7 +113,7 @@ function ConnectScreen() {
         <h1>
           <Wordmark />
         </h1>
-        <InternalSubheader />
+        <Tagline />
         <a
           href={`${import.meta.env.VITE_API_URL ?? ""}/api/auth/login`}
           className="mt-10 inline-flex items-center justify-center rounded-[10px] border border-[var(--hairline)] bg-[var(--surface-2)] px-3.5 py-2 text-[13px] font-medium text-[var(--text)] transition-colors duration-150 hover:border-[var(--hairline-2)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--api)]"

@@ -8,7 +8,7 @@ import { Skeleton } from "../components/ui/Skeleton";
 import { usePrefersReducedMotion } from "../components/usePrefersReducedMotion";
 import { useAuth } from "../components/AuthGate";
 import { useRepoIndex } from "../components/RepoIndexProvider";
-import { InternalSubheader, Wordmark } from "../components/Wordmark";
+import { Tagline, Wordmark } from "../components/Wordmark";
 import { api } from "../lib/api";
 import {
   formatRelative,
@@ -85,7 +85,7 @@ export default function HomePage() {
           <h1>
             <Wordmark />
           </h1>
-          <InternalSubheader />
+          <Tagline />
         </div>
       </section>
 

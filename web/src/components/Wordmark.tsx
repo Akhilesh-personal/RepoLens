@@ -13,7 +13,6 @@ export function Wordmark({ variant = "display" }: WordmarkProps) {
     return (
       <span className="inline-flex items-baseline gap-2 text-[14px] text-[var(--text)]">
         {mark}
-        <span className="text-[11px] font-normal text-[var(--text-3)]">KVS</span>
       </span>
     );
   }
@@ -21,10 +20,10 @@ export function Wordmark({ variant = "display" }: WordmarkProps) {
   return <span className="display">{mark}</span>;
 }
 
-export function InternalSubheader() {
+export function Tagline() {
   return (
     <p className="mt-3 text-[13px] font-normal tracking-[0.01em] text-[var(--text-3)]">
-      KVS Technologies · Internal use only
+      RepoLens — a tool that indexes a GitHub repository and explains what every file in it does, so you can get oriented in an unfamiliar codebase without reading it line by line.
     </p>
   );
 }
