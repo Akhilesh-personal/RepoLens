@@ -6,6 +6,9 @@
     "node": "22"
   },
   "workspaces": ["shared", "server", "web"],
+  "overrides": {
+    "body-parser": "2.4.0"
+  },
   "scripts": {
     "dev": "concurrently \"npm:dev:server\" \"npm:dev:web\"",
     "dev:server": "npm -w server run dev",
